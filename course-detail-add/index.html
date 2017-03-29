@@ -5,10 +5,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<title></title>
 		<style>
-			html,body{padding: 0;margin: 0;font-family: "微软雅黑";}
-			.member-think,.course-begin{padding: 0 10px;}
+			*{margin: 0;padding: 0;}
+			html,body{font-family: "微软雅黑";}
+			.member-think,.course-begin,.course{padding: 0 10px;}
 			.course-detail{padding:10px}
-			.title{color: #666;font-size: 14px;text-align: center;padding:10px 0;}
+			.title{color: #333;font-size: 14px;text-align: left;padding-left: 10px;border-left: 2px solid #666;
+			margin: 10px 0 10px 10px;}
 			.box{border-bottom: 1px dashed #D6D6D6;padding: 13px 10px 18px;}
 			.brief{font-size: 10px;display: flex;color:#b5b5b5;position: relative;}
 			.name{width: 45px;overflow: hidden;text-overflow: ellipsis;display: inline-block;white-space: nowrap;}
@@ -19,6 +21,21 @@
 			.star{margin-left: 10px;width: 60px;position: relative;}
 			.star-active,.star-gray{position: absolute;overflow: hidden;}
 			.star-active img,.star-gray img{width: 60px;}
+			
+			a{border: 0;outline: 0;color: currentcolor;text-decoration: none;}
+			.course-box{border: 1px solid #DBDBDB;border-radius: 3px;padding: 12px;display: flex;margin-bottom: 10px;}
+			.img{width: 35%;}
+			.course .title{margin-bottom: 15px;}
+			.desc{width: 65%;padding-left: 8px;position: relative;}
+			.img img{width: 100%;display: block;}
+			.desc-biref{height:33px;line-height:16px;display:-webkit-box;font-size: 12px;color: #666;overflow: hidden;word-break: break-all;-webkit-line-clamp: 2;-webkit-box-orient: vertical;}
+			.desc-price{position: absolute;width: 97%;right: 0;bottom: 0;}
+			.price{color: #999;font-size: 9px;text-decoration: line-through;vertical-align: bottom;}
+			.cur-price{color: #FF6700;font-size: 11px;vertical-align: bottom;}
+			.btn{padding: 4px 8px;color: #fff;font-size: 10px;background-color: #FF6700;border-radius: 3px;float: right;display: inline-block;}
+			@media only screen and (max-width: 340px) {
+				.btn{padding: 4px;}
+			}
 		</style>
 	</head>
 	<body>
@@ -83,6 +100,35 @@
 					<div class="time">于2017-3-21 09:32:30</div>
 				</div>
 				<div class="content">还不错！还不错！还不错！还不错！还不错！</div>
+			</div>
+		</div>
+		<div class="course">
+			<div class="title">本套餐包含如下课程内容</div>
+			<div class="course-box">
+				<div class="img">
+					<a href="#"><img src="http://img.wangxiao.cn/bjupload/2017-01-16/6d7d481b-97b1-4bfe-8bdb-9138fa08587e.png"></a>
+				</div>
+				<div class="desc">
+					<a href="#"><div class="desc-biref">马克思主义基本原理概论 03709（2017年4月精华版）马克思主义基本原理概论 03709（2017年4月精华版）</div></a>
+					<div class="desc-price">
+						<span class="price">原价￥8000</span>
+						<span class="cur-price">现价￥6000</span>
+						<a href="#"><span class="btn">免费试学</span></a>
+					</div>
+				</div>
+			</div>
+			<div class="course-box">
+				<div class="img">
+					<a href="#"><img src="http://img.wangxiao.cn/bjupload/2017-01-16/6d7d481b-97b1-4bfe-8bdb-9138fa08587e.png"></a>
+				</div>
+				<div class="desc">
+					<a href="#"><div class="desc-biref">马克思主义基本原理概论 03709（2017年4月精华版）</div></a>
+					<div class="desc-price">
+						<span class="price">原价￥8000</span>
+						<span class="cur-price">现价￥6000</span>
+						<a href="#"><span class="btn">免费试学</span></a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</body>
